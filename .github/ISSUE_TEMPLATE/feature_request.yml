@@ -1,0 +1,56 @@
+name: Feature request
+description: Propose planned work or a change to the roadmap
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please read the roadmap before opening a request. A feature listed as Planned is not available yet. Opening an issue does not implement it.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: Which operator or team problem should this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: What behavior do you want, and what should stay out of scope?
+    validations:
+      required: true
+  - type: dropdown
+    id: phase
+    attributes:
+      label: Suggested phase
+      options:
+        - Phase 1 — agent, collection, transport, ingest
+        - Phase 2 — dashboard, search, alerts, containers
+        - Phase 3 — AI diagnosis and assisted remediation
+        - Unsure
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - agent
+        - backend
+        - frontend
+        - deploy
+        - docs
+        - security
+        - other
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: How will a reviewer know the work is finished?
+    validations:
+      required: false

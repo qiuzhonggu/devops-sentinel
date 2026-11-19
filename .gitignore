@@ -1,0 +1,48 @@
+# Operating system
+.DS_Store
+Thumbs.db
+
+# Secrets and local environment
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+
+# Logs, spools, and local data
+*.log
+tmp/
+data/
+*.spool
+
+# Go
+bin/
+dist/
+vendor/
+coverage.out
+coverage.html
+*.exe
+*.test
+
+# Node / Vue
+node_modules/
+frontend/dist/
+frontend/.vite/
+*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Local deployment state
+deploy/runtime/

@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Security vulnerability
+    url: https://github.com/qiuzhonggu/devops-sentinel/security/advisories/new
+    about: Report a security vulnerability in private. Do not open a public issue.

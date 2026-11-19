@@ -1,0 +1,68 @@
+name: Bug report
+description: Report a defect in something that already exists in the repository
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        DevOps Sentinel is in planning / initial development. Use this form for a defect in code or docs that are already in the repository. Use a feature request for work that is still marked Planned.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What failed?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - agent
+        - backend
+        - frontend
+        - deploy
+        - docs
+        - ci
+        - other
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Operating system, tool versions, and the commit SHA, when you know them.
+    validations:
+      required: false
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: Paste only redacted logs. Remove tokens, passwords, certificates, and hostnames you do not want published.
+      render: text
+    validations:
+      required: false
